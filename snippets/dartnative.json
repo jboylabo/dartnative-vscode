@@ -1,0 +1,37 @@
+{
+  "DartNative StatelessWidget": {
+    "prefix": "stl",
+    "scope": "dart",
+    "description": "DartNative StatelessWidget (requires import 'package:dartnative/dartnative.dart';)",
+    "body": [
+      "class ${1:MyWidget} extends StatelessWidget {",
+      "  const ${1:MyWidget}({super.key});",
+      "",
+      "  @override",
+      "  Widget build(BuildContext context) {",
+      "    return ${2:Container()};",
+      "  }",
+      "}"
+    ]
+  },
+  "DartNative StatefulWidget": {
+    "prefix": "stf",
+    "scope": "dart",
+    "description": "DartNative StatefulWidget (requires import 'package:dartnative/dartnative.dart';)",
+    "body": [
+      "class ${1:MyWidget} extends StatefulWidget {",
+      "  const ${1:MyWidget}({super.key});",
+      "",
+      "  @override",
+      "  State<${1:MyWidget}> createState() => _${1:MyWidget}State();",
+      "}",
+      "",
+      "class _${1:MyWidget}State extends State<${1:MyWidget}> {",
+      "  @override",
+      "  Widget build(BuildContext context) {",
+      "    return ${2:Container()};",
+      "  }",
+      "}"
+    ]
+  }
+}
