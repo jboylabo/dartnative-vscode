@@ -1,0 +1,2364 @@
+{
+  "generatedAt": "2026-09-15T11:58:26.343Z",
+  "source": {
+    "repo": "https://github.com/DartNative/dartnative",
+    "commit": "fe39c987f13f0e6a58696f7b521773a5c5b08aae",
+    "branch": "main",
+    "docs": [
+      "docs/widgets.md"
+    ],
+    "scannedDartFileCount": 277
+  },
+  "widgets": [
+    {
+      "name": "Column",
+      "status": "stable",
+      "note": "",
+      "section": "Layout"
+    },
+    {
+      "name": "Row",
+      "status": "stable",
+      "note": "",
+      "section": "Layout"
+    },
+    {
+      "name": "Flex",
+      "status": "stable",
+      "note": "",
+      "section": "Layout"
+    },
+    {
+      "name": "Expanded",
+      "status": "stable",
+      "note": "",
+      "section": "Layout"
+    },
+    {
+      "name": "Flexible",
+      "status": "stable",
+      "note": "",
+      "section": "Layout"
+    },
+    {
+      "name": "Spacer",
+      "status": "stable",
+      "note": "",
+      "section": "Layout"
+    },
+    {
+      "name": "Stack",
+      "status": "stable",
+      "note": "",
+      "section": "Layout"
+    },
+    {
+      "name": "Positioned",
+      "status": "stable",
+      "note": "",
+      "section": "Layout"
+    },
+    {
+      "name": "Padding",
+      "status": "stable",
+      "note": "",
+      "section": "Layout"
+    },
+    {
+      "name": "Container",
+      "status": "stable",
+      "note": "",
+      "section": "Layout"
+    },
+    {
+      "name": "SizedBox",
+      "status": "stable",
+      "note": "",
+      "section": "Layout"
+    },
+    {
+      "name": "ConstrainedBox",
+      "status": "stable",
+      "note": "",
+      "section": "Layout"
+    },
+    {
+      "name": "DecoratedBox",
+      "status": "stable",
+      "note": "",
+      "section": "Layout"
+    },
+    {
+      "name": "Align",
+      "status": "stable",
+      "note": "",
+      "section": "Layout"
+    },
+    {
+      "name": "Center",
+      "status": "stable",
+      "note": "",
+      "section": "Layout"
+    },
+    {
+      "name": "SafeArea",
+      "status": "stable",
+      "note": "",
+      "section": "Layout"
+    },
+    {
+      "name": "Divider",
+      "status": "stable",
+      "note": "",
+      "section": "Layout"
+    },
+    {
+      "name": "VerticalDivider",
+      "status": "stable",
+      "note": "",
+      "section": "Layout"
+    },
+    {
+      "name": "AspectRatio",
+      "status": "stable",
+      "note": "",
+      "section": "Layout"
+    },
+    {
+      "name": "Opacity",
+      "status": "stable",
+      "note": "",
+      "section": "Layout"
+    },
+    {
+      "name": "Visibility",
+      "status": "stable",
+      "note": "Default flags match Flutter (hidden child is replaced and its state disposed). The full `maintain*` set is supported: with `maintainState: true` the child stays mounted and is hidden natively — pair with `maintainSize` to keep its layout slot",
+      "section": "Layout"
+    },
+    {
+      "name": "Offstage",
+      "status": "partial",
+      "note": "The offstage child is unmounted (state lost) — Flutter keeps it mounted at zero size. For state-preserving show/hide, use `IndexedStack`",
+      "section": "Layout"
+    },
+    {
+      "name": "ClipRRect",
+      "status": "stable",
+      "note": "Rounded rect clip via `Container(decoration: BoxDecoration(borderRadius: ...))`",
+      "section": "Layout"
+    },
+    {
+      "name": "ClipRSuperellipse",
+      "status": "stable",
+      "note": "iOS squircle clip — wraps child in `ShapeDecoration(shape: RoundedSuperellipseBorder(...))`",
+      "section": "Layout"
+    },
+    {
+      "name": "ClipOval",
+      "status": "stable",
+      "note": "Circle clip via `BoxDecoration(shape: BoxShape.circle)`",
+      "section": "Layout"
+    },
+    {
+      "name": "ClipRect",
+      "status": "stable",
+      "note": "Rectangular clip — `clipsToBounds` on the child",
+      "section": "Layout"
+    },
+    {
+      "name": "Wrap",
+      "status": "stable",
+      "note": "flex-wrap",
+      "section": "Layout"
+    },
+    {
+      "name": "FractionallySizedBox",
+      "status": "stable",
+      "note": "",
+      "section": "Layout"
+    },
+    {
+      "name": "IntrinsicWidth",
+      "status": "stable",
+      "note": "",
+      "section": "Layout"
+    },
+    {
+      "name": "IntrinsicHeight",
+      "status": "stable",
+      "note": "",
+      "section": "Layout"
+    },
+    {
+      "name": "FittedBox",
+      "status": "stable",
+      "note": "`BoxFit.cover`, `.contain`, `.fill`, `.scaleDown`",
+      "section": "Layout"
+    },
+    {
+      "name": "ColoredBox",
+      "status": "stable",
+      "note": "Prefer over `Container(color:…)` for simple fills",
+      "section": "Layout"
+    },
+    {
+      "name": "IgnorePointer",
+      "status": "stable",
+      "note": "Blocks hit testing for the subtree. Decided when a pointer goes down: a drag already in progress keeps flowing when `ignoring` flips mid-gesture",
+      "section": "Layout"
+    },
+    {
+      "name": "AbsorbPointer",
+      "status": "stable",
+      "note": "Blocks hit testing for the subtree. Decided when a pointer goes down: a drag already in progress keeps flowing when `ignoring` flips mid-gesture",
+      "section": "Layout"
+    },
+    {
+      "name": "IndexedStack",
+      "status": "stable",
+      "note": "One child visible at a time; all children stay mounted (state + scroll position preserved — the tab-switcher pattern). Sizing note: fills its parent (Flutter sizes to the largest child) — wrap in a `SizedBox` when you need an intrinsic size",
+      "section": "Layout"
+    },
+    {
+      "name": "LayoutBuilder",
+      "status": "stable",
+      "note": "Provides parent `BoxConstraints` to the builder",
+      "section": "Layout"
+    },
+    {
+      "name": "Directionality",
+      "status": "stable",
+      "note": "`Directionality.of(context)` works everywhere: every screen starts from the direction the platform lays the app out in, which is right-to-left only when the app declares a right-to-left language (`CFBundleLocalizations` on iOS, `android:supportsRtl` on Android). Wrap a subtree to override it. `MediaQueryData.textDirection` carries the same value",
+      "section": "Layout"
+    },
+    {
+      "name": "EdgeInsetsDirectional",
+      "status": "stable",
+      "note": "`start` and `end` follow the nearest `Directionality`; `AlignmentDirectional` is its own type, as in Flutter, and `AlignmentGeometry.resolve` gives the physical `Alignment`",
+      "section": "Layout"
+    },
+    {
+      "name": "AlignmentDirectional",
+      "status": "stable",
+      "note": "`start` and `end` follow the nearest `Directionality`; `AlignmentDirectional` is its own type, as in Flutter, and `AlignmentGeometry.resolve` gives the physical `Alignment`",
+      "section": "Layout"
+    },
+    {
+      "name": "Card",
+      "status": "stable",
+      "note": "Material card — elevation, shape, margin",
+      "section": "Layout"
+    },
+    {
+      "name": "ListTile",
+      "status": "stable",
+      "note": "Leading / title / subtitle / trailing row",
+      "section": "Layout"
+    },
+    {
+      "name": "Table",
+      "status": "stable",
+      "note": "Column-sized grid layout",
+      "section": "Layout"
+    },
+    {
+      "name": "BackdropFilter",
+      "status": "stable",
+      "note": "Native backdrop blur (Gaussian) — `UIVisualEffectView` (iOS) / `RenderEffect` (Android)",
+      "section": "Layout"
+    },
+    {
+      "name": "ImageFiltered",
+      "status": "stable",
+      "note": "Blurs the child's own content (Gaussian)",
+      "section": "Layout"
+    },
+    {
+      "name": "SnackBar",
+      "status": "stable",
+      "note": "Shown via `ScaffoldMessenger.of(context).showSnackBar`; `content`, `backgroundColor`, `duration`, and `action: SnackBarAction(label:, onPressed:)`",
+      "section": "Layout"
+    },
+    {
+      "name": "RepaintBoundary",
+      "status": "stable",
+      "note": "Accepted but no-op — no Skia layer boundaries needed",
+      "section": "Layout"
+    },
+    {
+      "name": "Text",
+      "status": "stable",
+      "note": "`UILabel`",
+      "section": "Text & Input"
+    },
+    {
+      "name": "RichText",
+      "status": "stable",
+      "note": "`NSMutableAttributedString` — per-span font, color, weight, italic, underline, strikethrough. `TextSpan.recognizer: TapGestureRecognizer` supported for tappable spans. `TextSpan` is not `const` — remove `const` from all `TextSpan(...)` calls",
+      "section": "Text & Input"
+    },
+    {
+      "name": "TextSpan",
+      "status": "stable",
+      "note": "`NSMutableAttributedString` — per-span font, color, weight, italic, underline, strikethrough. `TextSpan.recognizer: TapGestureRecognizer` supported for tappable spans. `TextSpan` is not `const` — remove `const` from all `TextSpan(...)` calls",
+      "section": "Text & Input"
+    },
+    {
+      "name": "TextField",
+      "status": "stable",
+      "note": "`UITextField` / `UITextView`. If `InputDecoration.contentPadding` is omitted, dartnative provides a default `EdgeInsets.symmetric(vertical: 14, horizontal: 14)` (override explicitly to customize). `inputFormatters` run on every edit before the keystroke is drawn, caret included: `FilteringTextInputFormatter` (`digitsOnly`, `allow`, `deny`), `LengthLimitingTextInputFormatter`, or your own `TextInputFormatter` over `TextEditingValue` / `TextSelection` `onSubmitted` fires when the user taps the keyboard's action key — the key itself is chosen by `textInputAction` (Done, Go, Search, Send, Next) — and receives the field's current text. As in Flutter, only single-line fields report a submission: in a multiline field that key inserts a newline.",
+      "section": "Text & Input"
+    },
+    {
+      "name": "TextEditingController",
+      "status": "stable",
+      "note": "`text`, `value`, `selection`, `clear()`. Typing updates the controller before `onChanged`; setting `selection` or `value` moves the caret, setting `text` keeps it where the field has it",
+      "section": "Text & Input"
+    },
+    {
+      "name": "TextPainter",
+      "status": "stable",
+      "note": "Drop-in replacement backed by the platform's text measurement — call `layout(maxWidth:)` then read `.size`",
+      "section": "Text & Input"
+    },
+    {
+      "name": "RenderParagraph",
+      "status": "stable",
+      "note": "Drop-in replacement — `layout(BoxConstraints)` + `.size`; no RenderObject tree required",
+      "section": "Text & Input"
+    },
+    {
+      "name": "SelectableText",
+      "status": "stable",
+      "note": "Covered by `Text(selectable: true)` — long-press to select/copy on BOTH platforms. Plain `Text` stays `UILabel` / `TextView`; the flag swaps in a read-only `UITextView` (iOS) / read-only `EditText` (Android), so use plain `Text` when selection isn't needed. A dedicated `SelectableText` class is not exported; pass the flag.",
+      "section": "Text & Input"
+    },
+    {
+      "name": "ListView",
+      "status": "stable",
+      "note": "",
+      "section": "Scrolling"
+    },
+    {
+      "name": "SingleChildScrollView",
+      "status": "stable",
+      "note": "",
+      "section": "Scrolling"
+    },
+    {
+      "name": "CustomScrollView",
+      "status": "stable",
+      "note": "",
+      "section": "Scrolling"
+    },
+    {
+      "name": "SliverList",
+      "status": "stable",
+      "note": "",
+      "section": "Scrolling"
+    },
+    {
+      "name": "SliverGrid",
+      "status": "stable",
+      "note": "`.count` and `.extent` constructors",
+      "section": "Scrolling"
+    },
+    {
+      "name": "SliverToBoxAdapter",
+      "status": "stable",
+      "note": "",
+      "section": "Scrolling"
+    },
+    {
+      "name": "SliverPadding",
+      "status": "stable",
+      "note": "",
+      "section": "Scrolling"
+    },
+    {
+      "name": "SliverFillRemaining",
+      "status": "stable",
+      "note": "",
+      "section": "Scrolling"
+    },
+    {
+      "name": "SliverAppBar",
+      "status": "stable",
+      "note": "With `FlexibleSpaceBar`",
+      "section": "Scrolling"
+    },
+    {
+      "name": "GridView",
+      "status": "stable",
+      "note": "`.count` and `.builder`; Yoga flex-wrap rows",
+      "section": "Scrolling"
+    },
+    {
+      "name": "FastList",
+      "status": "stable",
+      "note": "`UITableView` with cell recycling | `RecyclerView`",
+      "section": "Scrolling"
+    },
+    {
+      "name": "FastGrid",
+      "status": "stable",
+      "note": "`UICollectionView` with cell recycling | `RecyclerView`",
+      "section": "Scrolling"
+    },
+    {
+      "name": "MasonryFastGrid",
+      "status": "stable",
+      "note": "Staggered Pinterest-style grid; heights from `itemHeightBuilder`. `UICollectionView` with a custom staggered layout | `RecyclerView` (`StaggeredGridLayoutManager`)",
+      "section": "Scrolling"
+    },
+    {
+      "name": "Scaffold",
+      "status": "stable",
+      "note": "`backgroundColor` is the route's colour: on iOS 26 a push draws both screens as rounded cards over a backdrop painted with it, so a page colour painted deeper in the body than its root flashes the white default at the corners (a plain colour box at the body's root is read as the page) — see [The screen's background belongs on the Scaffold](#the-screens-background-belongs-on-the-scaffold). `brightness` declares the screen's light/dark trait (inherited by the body, bottom bars and keyboards; applies from the first build). Declare it on dark-styled screens: system effects like the iOS 26 scroll-edge fades render in the trait, so a dark-by-colors screen on a light-mode device gets white flashes without it. `bottomAccessory` — any-widget strip above the bottom bar (iOS 26 tabbed pattern → native `UITabAccessory`, slides inline on minimize; composed elsewhere) — see [Bottom accessory](#bottom-accessory-scaffoldbottomaccessory-ios-26)",
+      "section": "Navigation & Scaffold"
+    },
+    {
+      "name": "AppBar",
+      "status": "stable",
+      "note": "`automaticallyImplyLeading` (default `true`) auto-shows back button when screen can pop. `leading`, `title`, and `actions` all accept **arbitrary widgets** (`actions` takes several — each its own glass capsule on iOS 26) — see [Custom widgets in AppBar.title and AppBar.actions](#custom-widgets-in-appbartitle-and-appbaractions). Title placement and spacing: [`centerTitle`](#appbarcentertitle) and [`titleSpacing`](#appbartitlespacing); trailing-group padding: [`actionsPadding`](#appbaractionspadding) — each has its own section below. `subtitle` renders a secondary line under the title. `largeTitle` renders a large title under the bar that **collapses natively on scroll** into the bar title (`largeTitleSize` picks the Android M3 variant: medium/large flexible) — see [Large title & the see-through bar](#large-title--the-see-through-bar-ios-26). iOS 26 bar surfaces: a **translucent `backgroundColor`** (alpha < 1) = frosted glass (content faintly visible behind); **no `backgroundColor`** = a fully clear bar where content stays visible scrolling beneath, kept legible by the system scroll-edge blur ramp. On Android, **no `backgroundColor`** = the bar takes the screen's colour (`Scaffold.backgroundColor`) and a title and back arrow with no colour of their own turn white or black to stay readable against it. `searchBar` makes the bar region the search pill itself (the `SearchBar` row below); `title` is skipped when set — the pill owns the region. `actionsGlassBackground: false` (iOS 26) removes the glass capsule behind a self-designed action widget (an avatar circle keeps just its circle). On iOS 26, a bar using only plain native features is hosted on the **system navigation bar** and its buttons **morph between screens** — see [Morphing bar buttons](#morphing-bar-buttons-ios-26-appbarios) (`ios: AppBarIOSConfig(systemBar:)` selects the host explicitly)",
+      "section": "Navigation & Scaffold"
+    },
+    {
+      "name": "BackButton",
+      "status": "stable",
+      "note": "**Semantic back preset** for `AppBar.leading` — see details below. `leading` also accepts any other widget (e.g. a `Button`), which replaces the auto back button",
+      "section": "Navigation & Scaffold"
+    },
+    {
+      "name": "BarButtonItem",
+      "status": "stable",
+      "note": "Convenience trailing action for `AppBar.actions` — text (`title`), SF Symbol (`icon`, iOS) or font glyph (`fontIcon`, both platforms); iOS 26 Liquid Glass capsule via default `actionsGlassBackground`. With `menu: [MenuAction(...)]` the tap shows a **native anchored menu** (capsule→UIMenu morph on iOS 26; M3 popup on Android) — see [Native menus on a bar action](#native-menus-on-a-bar-action-barbuttonitemmenu)",
+      "section": "Navigation & Scaffold"
+    },
+    {
+      "name": "App",
+      "status": "stable",
+      "note": "Deprecated aliases: `MaterialApp`, `CupertinoApp`",
+      "section": "Navigation & Scaffold"
+    },
+    {
+      "name": "PageRoute",
+      "status": "stable",
+      "note": "Accepts `transition` and `duration` parameters. Deprecated alias: `MaterialPageRoute`",
+      "section": "Navigation & Scaffold"
+    },
+    {
+      "name": "BottomNavigationBar",
+      "status": "stable",
+      "note": "`UITabBar` — font glyph rendered directly on both platforms; no SF Symbol mapping needed. iOS 26: renders as the floating Liquid Glass pill — `backgroundColor` is ignored there and the bar manages its own home-indicator offset; pair with `Scaffold(extendBody: ...)` so content scrolls behind it — the system fade under the pill is applied automatically (declare `Scaffold.brightness` on dark screens; the fade renders in the trait). `scrollBehavior: TabBarScrollBehavior.minimizeOnScrollDown` minimizes the pill on scroll (real `UITabBarController` lowering — see [Minimize on scroll](#minimize-on-scroll-scrollbehavior-ios-26)); `BottomNavigationBarItem.search()` = the system search pill; item `subtitle`/`enabled`/`activeIcon` supported",
+      "section": "Navigation & Scaffold"
+    },
+    {
+      "name": "SegmentedControl",
+      "status": "stable",
+      "note": "`UISegmentedControl` (iOS)",
+      "section": "Navigation & Scaffold"
+    },
+    {
+      "name": "Drawer",
+      "status": "stable",
+      "note": "`Scaffold.drawer` — an opinionated slide drawer, no scrim. `drawerStyle` picks the reveal:<br>• **`DrawerStyle.push`** (default) — drawer and screen move **together** as one flat plane: the screen slides aside while the panel slides in from behind it, no shadow, no depth (Gmail / Spotify).<br>• **`DrawerStyle.slideOver`** — the drawer is a **static layer underneath, it never moves**; the screen lifts and slides over it as a floating card with an edge shadow and corners that round in as it travels (X / Twitter). Tune via `Scaffold.slideOverStyle` — `SlideOverStyle(shadow:, corner: straight/rounded, radius:)` — ignored under `push`.<br>Swipe to open (`drawerEnableOpenDragGesture`) or `Scaffold.of(context).openDrawer()`; tap the moved content or swipe back to close. `onDrawerChanged` fires on open/close; `Drawer.width` sets the panel width. Android tip: if the screen colors the system navigation-bar strip (bottom-bar screens), set it transparent while the drawer is open via `onDrawerChanged` — otherwise it draws over the sliding card's shadow. A manual AppBar hamburger wraps the button in a `Builder` so `Scaffold.of(context)` resolves below the drawer. `GlobalKey<ScaffoldState>` is not supported — drive the drawer via `Scaffold.of(context)`, or use `SliderMenuContainer` directly for key-driven control. **Release feel is native per platform:** iOS follows Apple's projection rule, Android the Material flick rule; `SliderMenuContainer.settleCurve` shapes the settle, and a new drag catches a still-moving panel.",
+      "section": "Navigation & Scaffold"
+    },
+    {
+      "name": "DrawerHeader",
+      "status": "stable",
+      "note": "`Scaffold.drawer` — an opinionated slide drawer, no scrim. `drawerStyle` picks the reveal:<br>• **`DrawerStyle.push`** (default) — drawer and screen move **together** as one flat plane: the screen slides aside while the panel slides in from behind it, no shadow, no depth (Gmail / Spotify).<br>• **`DrawerStyle.slideOver`** — the drawer is a **static layer underneath, it never moves**; the screen lifts and slides over it as a floating card with an edge shadow and corners that round in as it travels (X / Twitter). Tune via `Scaffold.slideOverStyle` — `SlideOverStyle(shadow:, corner: straight/rounded, radius:)` — ignored under `push`.<br>Swipe to open (`drawerEnableOpenDragGesture`) or `Scaffold.of(context).openDrawer()`; tap the moved content or swipe back to close. `onDrawerChanged` fires on open/close; `Drawer.width` sets the panel width. Android tip: if the screen colors the system navigation-bar strip (bottom-bar screens), set it transparent while the drawer is open via `onDrawerChanged` — otherwise it draws over the sliding card's shadow. A manual AppBar hamburger wraps the button in a `Builder` so `Scaffold.of(context)` resolves below the drawer. `GlobalKey<ScaffoldState>` is not supported — drive the drawer via `Scaffold.of(context)`, or use `SliderMenuContainer` directly for key-driven control. **Release feel is native per platform:** iOS follows Apple's projection rule, Android the Material flick rule; `SliderMenuContainer.settleCurve` shapes the settle, and a new drag catches a still-moving panel.",
+      "section": "Navigation & Scaffold"
+    },
+    {
+      "name": "FloatingActionButton",
+      "status": "stable",
+      "note": "Circular `UIButton` (iOS) — `child` font glyph rendered directly on both platforms",
+      "section": "Navigation & Scaffold"
+    },
+    {
+      "name": "BottomSheet",
+      "status": "stable",
+      "note": "Content-sized bottom overlay hosting a native widget tree — dim scrim, tap-outside + drag dismiss (iOS: VC containment; Android: `BottomSheetDialog`). Rides the keyboard natively: the card stays glued above it through open/close and rotation, and its height caps to the available space (content clips rather than pushing off-screen)",
+      "section": "Navigation & Scaffold"
+    },
+    {
+      "name": "SheetDetent",
+      "status": "stable",
+      "note": "Native detent sheet — `UISheetPresentationController` (iOS 15+): `medium`/`large`/`adaptive`/`fitContent`, native spring physics, grabber, swipe-to-dismiss. `fitContent` sizes to the measured content height; on iOS 26 it presents as a bottom overlay (partial-height sheets there are floating Liquid Glass cards with no opt-out). On Android every detent is Material's modal bottom sheet: `fitContent` sized to its content, `medium`/`adaptive` resting at half height (adaptive drags to full), `large` at full height below the status bar, the content laid out at the sheet's height. A `SheetHeader` lowers by default to real bar items on the sheet's own navigation bar (`systemBar: false` composes glass buttons instead): centred title, system close, up to two trailing actions. Adjacent actions share one Liquid Glass capsule; a `SizedBox(width:)` between them splits them, as in `AppBar.actions`. `SheetHeaderController.update` re-declares a live header as sheet state changes. It works the same whether the header sits on the sheet's own bar or is drawn by the framework, which is what Android and `fitContent` sheets on iOS 26 get. Content is padded below the bar automatically. Without `systemBar` the header renders as composed glass buttons.",
+      "section": "Navigation & Scaffold"
+    },
+    {
+      "name": "SheetHeader",
+      "status": "stable",
+      "note": "Native detent sheet — `UISheetPresentationController` (iOS 15+): `medium`/`large`/`adaptive`/`fitContent`, native spring physics, grabber, swipe-to-dismiss. `fitContent` sizes to the measured content height; on iOS 26 it presents as a bottom overlay (partial-height sheets there are floating Liquid Glass cards with no opt-out). On Android every detent is Material's modal bottom sheet: `fitContent` sized to its content, `medium`/`adaptive` resting at half height (adaptive drags to full), `large` at full height below the status bar, the content laid out at the sheet's height. A `SheetHeader` lowers by default to real bar items on the sheet's own navigation bar (`systemBar: false` composes glass buttons instead): centred title, system close, up to two trailing actions. Adjacent actions share one Liquid Glass capsule; a `SizedBox(width:)` between them splits them, as in `AppBar.actions`. `SheetHeaderController.update` re-declares a live header as sheet state changes. It works the same whether the header sits on the sheet's own bar or is drawn by the framework, which is what Android and `fitContent` sheets on iOS 26 get. Content is padded below the bar automatically. Without `systemBar` the header renders as composed glass buttons.",
+      "section": "Navigation & Scaffold"
+    },
+    {
+      "name": "Dialog",
+      "status": "stable",
+      "note": "Imperative `showAlert()` → `UIAlertController`",
+      "section": "Navigation & Scaffold"
+    },
+    {
+      "name": "AlertDialog",
+      "status": "stable",
+      "note": "Imperative `showAlert()` → `UIAlertController`",
+      "section": "Navigation & Scaffold"
+    },
+    {
+      "name": "ElevatedButton",
+      "status": "stable",
+      "note": "`flutter_compat` wrapper over `Button(variant: ButtonVariant.filled, elevation: 2)`",
+      "section": "Controls"
+    },
+    {
+      "name": "TextButton",
+      "status": "stable",
+      "note": "`flutter_compat` wrapper over `Button(variant: ButtonVariant.plain)`",
+      "section": "Controls"
+    },
+    {
+      "name": "OutlinedButton",
+      "status": "stable",
+      "note": "`flutter_compat` wrapper over `Button(variant: ButtonVariant.bordered)`",
+      "section": "Controls"
+    },
+    {
+      "name": "FilledButton",
+      "status": "stable",
+      "note": "`flutter_compat` wrappers over `Button(variant: ButtonVariant.filled/tinted)`",
+      "section": "Controls"
+    },
+    {
+      "name": "IconButton",
+      "status": "stable",
+      "note": "48×48 minimum hit target (Flutter `kMinInteractiveDimension` parity)",
+      "section": "Controls"
+    },
+    {
+      "name": "NativeButton",
+      "status": "stable",
+      "note": "`UIButton.Configuration` — filled, tinted, gray, bordered, plain. For new DN code, prefer `Button` directly.",
+      "section": "Controls"
+    },
+    {
+      "name": "GestureDetector",
+      "status": "stable",
+      "note": "The full gesture surface, all wired to native recognizers: taps (`onTap`, `onDoubleTap`, `onLongPress`, `onTapDown`, `onTapUp`, `onTapCancel`), pan (`onPanStart/Update/End`), axis-locked drags (`onHorizontalDragStart/Update/End`, `onVerticalDragStart/Update/End`) and pinch (`onScaleStart/Update/End` — focal point and scale factor; the end velocity is `0.0` on Android, which doesn't expose pinch velocity). Drag and tap details carry both `globalPosition` and `localPosition`, so scrubbers, trim handles and pinch-zoom UIs are all buildable in Dart. `HitTestBehavior.translucent` fires the view's own callback **and** forwards the tap to overlapping siblings drawn beneath it whose bounds contain the touch point",
+      "section": "Controls"
+    },
+    {
+      "name": "Listener",
+      "status": "stable",
+      "note": "Raw pointer events",
+      "section": "Controls"
+    },
+    {
+      "name": "InkWell",
+      "status": "stable",
+      "note": "`UIButton`-style press highlight",
+      "section": "Controls"
+    },
+    {
+      "name": "Checkbox",
+      "status": "stable",
+      "note": "`UIButton` + SF Symbols; tristate supported",
+      "section": "Controls"
+    },
+    {
+      "name": "Switch",
+      "status": "stable",
+      "note": "`UISwitch` on iPhone, Google's Material 3 switch on Android — nothing to turn on. The four colour parameters work on both. `android: AndroidSwitchStyle(checkIcon: true)` adds the tick mark inside the knob",
+      "section": "Controls"
+    },
+    {
+      "name": "CupertinoSwitch",
+      "status": "stable",
+      "note": "`UISwitch` on iPhone, Google's Material 3 switch on Android — nothing to turn on. The four colour parameters work on both. `android: AndroidSwitchStyle(checkIcon: true)` adds the tick mark inside the knob",
+      "section": "Controls"
+    },
+    {
+      "name": "Slider",
+      "status": "stable",
+      "note": "`UISlider` on iPhone, Google's Material 3 slider on Android — a slim upright handle with a gap either side and a dot at the end. Size it with `android: AndroidSliderStyle(...)`: `trackHeight`, `thumbWidth`, `thumbHeight`, `thumbTrackGap`, `stopIndicatorSize`, `trackCornerSize` (all in dp; set the last three to 0 for a plain bar). Colors resolve Flutter's way: the widget's `activeColor`/`inactiveColor`/`thumbColor` win, else the ambient `SliderTheme(data: SliderThemeData(...))` supplies `activeTrackColor`/`inactiveTrackColor`/`thumbColor` (reactive — sliders restyle when the theme changes). Slider geometry stays native: `SliderThemeData`'s shape classes compile for source compatibility but the track and thumb shapes are the platform's own (`android:` is the geometry knob)",
+      "section": "Controls"
+    },
+    {
+      "name": "CupertinoSlider",
+      "status": "stable",
+      "note": "`UISlider` on iPhone, Google's Material 3 slider on Android — a slim upright handle with a gap either side and a dot at the end. Size it with `android: AndroidSliderStyle(...)`: `trackHeight`, `thumbWidth`, `thumbHeight`, `thumbTrackGap`, `stopIndicatorSize`, `trackCornerSize` (all in dp; set the last three to 0 for a plain bar). Colors resolve Flutter's way: the widget's `activeColor`/`inactiveColor`/`thumbColor` win, else the ambient `SliderTheme(data: SliderThemeData(...))` supplies `activeTrackColor`/`inactiveTrackColor`/`thumbColor` (reactive — sliders restyle when the theme changes). Slider geometry stays native: `SliderThemeData`'s shape classes compile for source compatibility but the track and thumb shapes are the platform's own (`android:` is the geometry knob)",
+      "section": "Controls"
+    },
+    {
+      "name": "CircularProgressIndicator",
+      "status": "stable",
+      "note": "`UIActivityIndicatorView` on iPhone. On Android, `android: AndroidProgressIndicatorStyle(wavy: true)` gives Google's wavy spinner",
+      "section": "Controls"
+    },
+    {
+      "name": "LinearProgressIndicator",
+      "status": "stable",
+      "note": "`UIProgressView` on iPhone, Google's Material 3 bar on Android (rounded ends, a gap before the dot at the end). `value` 0.0–1.0, or `null` while you don't know how long it takes; `android: AndroidProgressIndicatorStyle(wavy: true)` for the wave",
+      "section": "Controls"
+    },
+    {
+      "name": "Clipboard",
+      "status": "stable",
+      "note": "Flutter's call shapes: `Clipboard.setData(ClipboardData(text: ...))` writes, `Clipboard.getData(Clipboard.kTextPlain)` reads (returns `null` when the clipboard holds no text; plain text is the only format). On iPhone, reading the clipboard from code makes the system show the user a short notice — for example \"YourApp pasted from Safari\" — and it may first ask their permission; the clipboard can hold private data like passwords, so no app can read it silently. Read when the user asked to paste, not in the background.",
+      "section": "Platform Services"
+    },
+    {
+      "name": "DynamicColor",
+      "status": "stable",
+      "note": "`DynamicColor.colorScheme(brightness:)` builds the M3 `ColorScheme` from the device's wallpaper-derived palette (Android 12+); `DynamicColor.corePalette()` exposes the raw five tonal palettes. Returns `null` where there's no device palette (iOS, Android < 12) — theme from your own seed: `scheme ?? fallback`.",
+      "section": "Platform Services"
+    },
+    {
+      "name": "CircleAvatar",
+      "status": "stable",
+      "note": "`Container` + `BoxDecoration(shape: BoxShape.circle)`",
+      "section": "Images"
+    },
+    {
+      "name": "FocusNode",
+      "status": "stable",
+      "note": "Real platform focus",
+      "section": "Focus & Keyboard"
+    },
+    {
+      "name": "Focus",
+      "status": "stable",
+      "note": "",
+      "section": "Focus & Keyboard"
+    },
+    {
+      "name": "FocusScope",
+      "status": "stable",
+      "note": "",
+      "section": "Focus & Keyboard"
+    },
+    {
+      "name": "FocusScopeNode",
+      "status": "stable",
+      "note": "",
+      "section": "Focus & Keyboard"
+    },
+    {
+      "name": "BoxDecoration",
+      "status": "stable",
+      "note": "color, borderRadius, border, gradient, shadows",
+      "section": "Styling & Painting"
+    },
+    {
+      "name": "BoxShadow",
+      "status": "stable",
+      "note": "",
+      "section": "Styling & Painting"
+    },
+    {
+      "name": "LinearGradient",
+      "status": "stable",
+      "note": "",
+      "section": "Styling & Painting"
+    },
+    {
+      "name": "RadialGradient",
+      "status": "stable",
+      "note": "",
+      "section": "Styling & Painting"
+    },
+    {
+      "name": "ShapeDecoration",
+      "status": "stable",
+      "note": "",
+      "section": "Styling & Painting"
+    },
+    {
+      "name": "RoundedRectangleBorder",
+      "status": "stable",
+      "note": "",
+      "section": "Styling & Painting"
+    },
+    {
+      "name": "CircleBorder",
+      "status": "stable",
+      "note": "",
+      "section": "Styling & Painting"
+    },
+    {
+      "name": "StadiumBorder",
+      "status": "stable",
+      "note": "Pill shape",
+      "section": "Styling & Painting"
+    },
+    {
+      "name": "RoundedSuperellipseBorder",
+      "status": "stable",
+      "note": "iOS squircle (`CALayer.cornerCurve = .continuous`). Use directly via `ShapeDecoration` or via `ClipRSuperellipse`",
+      "section": "Styling & Painting"
+    }
+  ],
+  "icons": {
+    "MaterialSymbolsRounded": [
+      {
+        "name": "add",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/liquid_glass/bar_actions_demo.dart",
+          "playground/lib/screens/system_components_demo.dart"
+        ]
+      },
+      {
+        "name": "airplay",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/music/now_playing_sheet.dart"
+        ]
+      },
+      {
+        "name": "android",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/home/system_tab.dart"
+        ]
+      },
+      {
+        "name": "arrow_back",
+        "verified": true,
+        "sourceFiles": [
+          "plugins/dartnative_webview/example/lib/webview_demo.dart"
+        ]
+      },
+      {
+        "name": "arrow_back_ios",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/media/cache_demo.dart",
+          "plugins/dartnative_video_player/example/lib/screens/cache_demo.dart"
+        ]
+      },
+      {
+        "name": "arrow_forward",
+        "verified": true,
+        "sourceFiles": [
+          "plugins/dartnative_webview/example/lib/webview_demo.dart"
+        ]
+      },
+      {
+        "name": "arrow_forward_ios",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/media/cache_demo.dart",
+          "plugins/dartnative_video_player/example/lib/screens/cache_demo.dart"
+        ]
+      },
+      {
+        "name": "badge",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/material3/material3_menu.dart",
+          "tutorials/material_you/lib/main.dart"
+        ]
+      },
+      {
+        "name": "check",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/system_components_demo.dart"
+        ]
+      },
+      {
+        "name": "check_circle",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/liquid_glass/bar_actions_demo.dart",
+          "playground/lib/screens/material3/m3_menus_demo.dart",
+          "playground/lib/screens/media/cache_demo.dart",
+          "plugins/dartnative_video_player/example/lib/screens/cache_demo.dart"
+        ]
+      },
+      {
+        "name": "close",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/system_components_demo.dart"
+        ]
+      },
+      {
+        "name": "crop_rotate",
+        "verified": true,
+        "sourceFiles": [
+          "plugins/dartnative_image_crop/example/lib/screens/image_crop_full.dart"
+        ]
+      },
+      {
+        "name": "delete",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/liquid_glass/bar_actions_demo.dart",
+          "playground/lib/screens/material3/m3_menus_demo.dart"
+        ]
+      },
+      {
+        "name": "downloading",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/media/cache_demo.dart",
+          "plugins/dartnative_video_player/example/lib/screens/cache_demo.dart"
+        ]
+      },
+      {
+        "name": "explore",
+        "verified": true,
+        "sourceFiles": [
+          "plugins/dartnative_webview/example/lib/webview_demo.dart"
+        ]
+      },
+      {
+        "name": "favorite",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/system_components_demo.dart"
+        ]
+      },
+      {
+        "name": "flip",
+        "verified": true,
+        "sourceFiles": [
+          "plugins/dartnative_image_crop/example/lib/screens/image_crop_full.dart"
+        ]
+      },
+      {
+        "name": "forward_10",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/media/custom_controls_demo.dart",
+          "plugins/dartnative_video_player/example/lib/screens/custom_controls_demo.dart",
+          "tutorials/video_player/lib/screens/media/custom_controls_demo.dart"
+        ]
+      },
+      {
+        "name": "home",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/system_components_demo.dart"
+        ]
+      },
+      {
+        "name": "menu",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/material3/m3_search_appbar_demo.dart",
+          "playground/lib/screens/material3/material3_menu.dart",
+          "tutorials/search_app_bar/lib/screens/material3/m3_search_appbar_demo.dart"
+        ]
+      },
+      {
+        "name": "palette",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/material3/material3_menu.dart",
+          "tutorials/material_you/lib/main.dart"
+        ]
+      },
+      {
+        "name": "percent",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/material3/material3_menu.dart"
+        ]
+      },
+      {
+        "name": "person",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/system_components_demo.dart"
+        ]
+      },
+      {
+        "name": "play_circle",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/media/cache_demo.dart",
+          "plugins/dartnative_video_player/example/lib/screens/cache_demo.dart"
+        ]
+      },
+      {
+        "name": "radio_button_unchecked",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/media/cache_demo.dart",
+          "plugins/dartnative_video_player/example/lib/screens/cache_demo.dart"
+        ]
+      },
+      {
+        "name": "replay_10",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/media/custom_controls_demo.dart",
+          "plugins/dartnative_video_player/example/lib/screens/custom_controls_demo.dart",
+          "tutorials/video_player/lib/screens/media/custom_controls_demo.dart"
+        ]
+      },
+      {
+        "name": "rotate_left",
+        "verified": true,
+        "sourceFiles": [
+          "plugins/dartnative_image_crop/example/lib/screens/image_crop_full.dart"
+        ]
+      },
+      {
+        "name": "rotate_right",
+        "verified": true,
+        "sourceFiles": [
+          "plugins/dartnative_image_crop/example/lib/screens/image_crop_full.dart"
+        ]
+      },
+      {
+        "name": "search",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/material3/material3_menu.dart"
+        ]
+      },
+      {
+        "name": "settings",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/system_components_demo.dart"
+        ]
+      },
+      {
+        "name": "share",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/liquid_glass/bar_actions_demo.dart",
+          "playground/lib/screens/material3/m3_menus_demo.dart",
+          "plugins/dartnative_webview/example/lib/webview_demo.dart"
+        ]
+      },
+      {
+        "name": "star",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/system_components_demo.dart"
+        ]
+      },
+      {
+        "name": "swipe",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/material3/material3_menu.dart",
+          "tutorials/material_you/lib/main.dart"
+        ]
+      },
+      {
+        "name": "title",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/material3/material3_menu.dart"
+        ]
+      },
+      {
+        "name": "toggle_on",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/material3/material3_menu.dart"
+        ]
+      },
+      {
+        "name": "tune",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/material3/material3_menu.dart"
+        ]
+      },
+      {
+        "name": "volume_off",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/media/custom_controls_demo.dart",
+          "plugins/dartnative_video_player/example/lib/screens/custom_controls_demo.dart",
+          "tutorials/video_player/lib/screens/media/custom_controls_demo.dart"
+        ]
+      },
+      {
+        "name": "volume_up",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/media/custom_controls_demo.dart",
+          "plugins/dartnative_video_player/example/lib/screens/custom_controls_demo.dart",
+          "tutorials/video_player/lib/screens/media/custom_controls_demo.dart"
+        ]
+      }
+    ],
+    "MaterialSymbolsSharp": [
+      {
+        "name": "add",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "airplay",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "android",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "arrow_back",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "arrow_back_ios",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "arrow_forward",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "arrow_forward_ios",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "badge",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "check",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "check_circle",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "close",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "crop_rotate",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "delete",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "downloading",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "explore",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "favorite",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "flip",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "forward_10",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "home",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "menu",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "palette",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "percent",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "person",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "play_circle",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "radio_button_unchecked",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "replay_10",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "rotate_left",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "rotate_right",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "search",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "settings",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "share",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "star",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "swipe",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "title",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "toggle_on",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "tune",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "volume_off",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "volume_up",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      }
+    ],
+    "MaterialSymbolsOutlined": [
+      {
+        "name": "add",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "airplay",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "android",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "arrow_back",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "arrow_back_ios",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "arrow_forward",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "arrow_forward_ios",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "badge",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "check",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "check_circle",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "close",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "crop_rotate",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "delete",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "downloading",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "explore",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "favorite",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "flip",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "forward_10",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "home",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "menu",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "palette",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "percent",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "person",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "play_circle",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "radio_button_unchecked",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "replay_10",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "rotate_left",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "rotate_right",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "search",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "settings",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "share",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "star",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "swipe",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "title",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "toggle_on",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "tune",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "volume_off",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      },
+      {
+        "name": "volume_up",
+        "verified": false,
+        "sourceFiles": [],
+        "derivedFrom": "MaterialSymbolsRounded"
+      }
+    ],
+    "CupertinoIcons": [
+      {
+        "name": "antenna_radiowaves_left_right",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/home/system_tab.dart"
+        ]
+      },
+      {
+        "name": "archivebox_fill",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/home/system_tab.dart"
+        ]
+      },
+      {
+        "name": "arrow_2_circlepath",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/home/media_tab.dart"
+        ]
+      },
+      {
+        "name": "arrow_merge",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/liquid_glass/liquid_glass_menu.dart"
+        ]
+      },
+      {
+        "name": "arrow_up",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/chat_screen_demo.dart",
+          "playground/lib/screens/media/chatgpt_picker_demo.dart",
+          "tutorials/chat_screen/lib/screens/chat_screen_demo.dart"
+        ]
+      },
+      {
+        "name": "arrow_up_arrow_down",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/home/graphics_tab.dart"
+        ]
+      },
+      {
+        "name": "arrow_up_left_arrow_down_right",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/liquid_glass/liquid_glass_menu.dart"
+        ]
+      },
+      {
+        "name": "at",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/media/gpt_attachment_panel.dart"
+        ]
+      },
+      {
+        "name": "backward_fill",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/carousel_demo.dart",
+          "playground/lib/screens/music/now_playing_sheet.dart"
+        ]
+      },
+      {
+        "name": "bell",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/system_components_demo.dart"
+        ]
+      },
+      {
+        "name": "bell_fill",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/home/system_tab.dart"
+        ]
+      },
+      {
+        "name": "bolt_badge_a",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/media/camera_demo.dart",
+          "plugins/dartnative_camera/example/lib/screens/camera_demo.dart",
+          "tutorials/camera/lib/screens/media/camera_demo.dart"
+        ]
+      },
+      {
+        "name": "bolt_fill",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/home/widgets_tab.dart",
+          "playground/lib/screens/media/camera_demo.dart",
+          "plugins/dartnative_camera/example/lib/screens/camera_demo.dart",
+          "tutorials/camera/lib/screens/media/camera_demo.dart",
+          "tutorials/state/lib/main.dart"
+        ]
+      },
+      {
+        "name": "bolt_slash",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/media/camera_demo.dart",
+          "plugins/dartnative_camera/example/lib/screens/camera_demo.dart",
+          "tutorials/camera/lib/screens/media/camera_demo.dart"
+        ]
+      },
+      {
+        "name": "bubble_left_bubble_right_fill",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/home/showcase_tab.dart"
+        ]
+      },
+      {
+        "name": "bubble_left_fill",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/home/media_tab.dart"
+        ]
+      },
+      {
+        "name": "camera",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/media/gpt_attachment_panel.dart"
+        ]
+      },
+      {
+        "name": "camera_fill",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/home/media_tab.dart",
+          "playground/lib/screens/liquid_glass/glass_merge_demo.dart",
+          "tutorials/camera/lib/main.dart",
+          "tutorials/liquid_glass/lib/screens/liquid_glass/glass_merge_demo.dart"
+        ]
+      },
+      {
+        "name": "camera_rotate",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/media/camera_demo.dart",
+          "plugins/dartnative_camera/example/lib/screens/camera_demo.dart",
+          "tutorials/camera/lib/screens/media/camera_demo.dart"
+        ]
+      },
+      {
+        "name": "chat_bubble_2",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/material3/m3_badges_demo.dart",
+          "tutorials/material_you/lib/screens/material3/m3_badges_demo.dart"
+        ]
+      },
+      {
+        "name": "chat_bubble_2_fill",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/liquid_glass/zoom_morph_demo.dart"
+        ]
+      },
+      {
+        "name": "checkmark",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/system_components_demo.dart",
+          "plugins/dartnative_media_picker/example/lib/screens/gallery_demo.dart"
+        ]
+      },
+      {
+        "name": "checkmark_circle",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/liquid_glass/bar_actions_demo.dart"
+        ]
+      },
+      {
+        "name": "checkmark_circle_fill",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/media/hls_demo.dart",
+          "plugins/dartnative_video_player/example/lib/screens/hls_demo.dart"
+        ]
+      },
+      {
+        "name": "checkmark_seal_fill",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/chat_screen_demo.dart",
+          "tutorials/chat_screen/lib/screens/chat_screen_demo.dart"
+        ]
+      },
+      {
+        "name": "chevron_back",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/media/camera_demo.dart",
+          "plugins/dartnative_webview/example/lib/webview_demo.dart",
+          "tutorials/camera/lib/screens/media/camera_demo.dart"
+        ]
+      },
+      {
+        "name": "chevron_down",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/chat_screen_demo.dart",
+          "playground/lib/screens/hero_demo.dart",
+          "tutorials/chat_screen/lib/screens/chat_screen_demo.dart",
+          "tutorials/hero_stories/lib/screens/hero_demo.dart"
+        ]
+      },
+      {
+        "name": "chevron_forward",
+        "verified": true,
+        "sourceFiles": [
+          "plugins/dartnative_webview/example/lib/webview_demo.dart"
+        ]
+      },
+      {
+        "name": "chevron_left",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/media/gpt_attachment_panel.dart"
+        ]
+      },
+      {
+        "name": "chevron_right",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/home/demo_ui.dart",
+          "playground/lib/screens/liquid_glass/bar_surfaces_demo.dart",
+          "playground/lib/screens/system_components_demo.dart",
+          "tutorials/camera/lib/screens/home/demo_ui.dart",
+          "tutorials/chat_screen/lib/screens/home/demo_ui.dart",
+          "tutorials/fast_list/lib/screens/home/demo_ui.dart",
+          "tutorials/hero_stories/lib/screens/home/demo_ui.dart",
+          "tutorials/liquid_glass/lib/screens/home/demo_ui.dart",
+          "tutorials/lottie/lib/screens/home/demo_ui.dart",
+          "tutorials/material_you/lib/screens/home/demo_ui.dart",
+          "tutorials/native_canvas/lib/screens/home/demo_ui.dart",
+          "tutorials/notifications/lib/screens/home/demo_ui.dart",
+          "tutorials/photo_grid/lib/screens/home/demo_ui.dart",
+          "tutorials/search_app_bar/lib/screens/home/demo_ui.dart",
+          "tutorials/social_sign_in/lib/screens/home/demo_ui.dart",
+          "tutorials/state/lib/screens/home/demo_ui.dart",
+          "tutorials/storage/lib/screens/home/demo_ui.dart",
+          "tutorials/text_to_speech/lib/screens/home/demo_ui.dart",
+          "tutorials/video_player/lib/screens/home/demo_ui.dart"
+        ]
+      },
+      {
+        "name": "circle_grid_hex_fill",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/carousel_demo.dart",
+          "playground/lib/screens/liquid_glass/liquid_glass_menu.dart",
+          "tutorials/liquid_glass/lib/main.dart"
+        ]
+      },
+      {
+        "name": "clock",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/media/gpt_attachment_panel.dart"
+        ]
+      },
+      {
+        "name": "compass",
+        "verified": true,
+        "sourceFiles": [
+          "plugins/dartnative_webview/example/lib/webview_demo.dart"
+        ]
+      },
+      {
+        "name": "cube_box",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/home/home_shell.dart"
+        ]
+      },
+      {
+        "name": "dot_radiowaves_left_right",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/music/music_demo.dart"
+        ]
+      },
+      {
+        "name": "drop_fill",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/home/graphics_tab.dart",
+          "playground/lib/screens/home/showcase_tab.dart"
+        ]
+      },
+      {
+        "name": "ellipsis",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/music/album_screen.dart",
+          "playground/lib/screens/music/now_playing_sheet.dart"
+        ]
+      },
+      {
+        "name": "ellipsis_circle_fill",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/liquid_glass/liquid_glass_menu.dart"
+        ]
+      },
+      {
+        "name": "film_fill",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/home/demo_ui.dart",
+          "playground/lib/screens/home/graphics_tab.dart",
+          "tutorials/camera/lib/screens/home/demo_ui.dart",
+          "tutorials/chat_screen/lib/screens/home/demo_ui.dart",
+          "tutorials/fast_list/lib/screens/home/demo_ui.dart",
+          "tutorials/hero_stories/lib/screens/home/demo_ui.dart",
+          "tutorials/liquid_glass/lib/screens/home/demo_ui.dart",
+          "tutorials/lottie/lib/screens/home/demo_ui.dart",
+          "tutorials/material_you/lib/screens/home/demo_ui.dart",
+          "tutorials/native_canvas/lib/screens/home/demo_ui.dart",
+          "tutorials/notifications/lib/screens/home/demo_ui.dart",
+          "tutorials/photo_grid/lib/screens/home/demo_ui.dart",
+          "tutorials/search_app_bar/lib/screens/home/demo_ui.dart",
+          "tutorials/social_sign_in/lib/screens/home/demo_ui.dart",
+          "tutorials/state/lib/screens/home/demo_ui.dart",
+          "tutorials/storage/lib/screens/home/demo_ui.dart",
+          "tutorials/text_to_speech/lib/screens/home/demo_ui.dart",
+          "tutorials/video_player/lib/screens/home/demo_ui.dart"
+        ]
+      },
+      {
+        "name": "forward_fill",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/carousel_demo.dart",
+          "playground/lib/screens/music/music_demo.dart",
+          "playground/lib/screens/music/now_playing_sheet.dart"
+        ]
+      },
+      {
+        "name": "fullscreen_exit",
+        "verified": true,
+        "sourceFiles": [
+          "plugins/dartnative_video_player/example/lib/screens/controls/video_full_screen_controls.dart"
+        ]
+      },
+      {
+        "name": "globe",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/home/widgets_tab.dart"
+        ]
+      },
+      {
+        "name": "gobackward",
+        "verified": true,
+        "sourceFiles": [
+          "plugins/dartnative_video_player/example/lib/screens/controls/video_full_screen_controls.dart"
+        ]
+      },
+      {
+        "name": "goforward",
+        "verified": true,
+        "sourceFiles": [
+          "plugins/dartnative_video_player/example/lib/screens/controls/video_full_screen_controls.dart"
+        ]
+      },
+      {
+        "name": "hand_draw_fill",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/home/widgets_tab.dart"
+        ]
+      },
+      {
+        "name": "heart",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/system_components_demo.dart"
+        ]
+      },
+      {
+        "name": "heart_fill",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/system_components_demo.dart"
+        ]
+      },
+      {
+        "name": "house",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/system_components_demo.dart"
+        ]
+      },
+      {
+        "name": "house_fill",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/music/music_demo.dart",
+          "playground/lib/screens/system_components_demo.dart"
+        ]
+      },
+      {
+        "name": "info_circle",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/liquid_glass/large_title_demo.dart",
+          "tutorials/liquid_glass/lib/screens/liquid_glass/large_title_demo.dart"
+        ]
+      },
+      {
+        "name": "keyboard",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/home/widgets_tab.dart"
+        ]
+      },
+      {
+        "name": "light_max",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/media/camera_demo.dart",
+          "plugins/dartnative_camera/example/lib/screens/camera_demo.dart",
+          "tutorials/camera/lib/screens/media/camera_demo.dart"
+        ]
+      },
+      {
+        "name": "line_horizontal_3",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/home/home_shell.dart"
+        ]
+      },
+      {
+        "name": "list_bullet",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/liquid_glass/floating_tab_bar_demo.dart",
+          "playground/lib/screens/material3/m3_hide_on_scroll_demo.dart",
+          "playground/lib/screens/music/now_playing_sheet.dart",
+          "tutorials/material_you/lib/screens/material3/m3_hide_on_scroll_demo.dart"
+        ]
+      },
+      {
+        "name": "list_dash",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/home/widgets_tab.dart"
+        ]
+      },
+      {
+        "name": "lock_fill",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/home/system_tab.dart"
+        ]
+      },
+      {
+        "name": "map_fill",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/liquid_glass/zoom_morph_demo.dart"
+        ]
+      },
+      {
+        "name": "mic",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/media/chatgpt_picker_demo.dart"
+        ]
+      },
+      {
+        "name": "moon",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/home/home_shell.dart",
+          "playground/lib/screens/state_store_demo.dart",
+          "tutorials/state/lib/screens/state_store_demo.dart"
+        ]
+      },
+      {
+        "name": "music_albums_fill",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/home/showcase_tab.dart",
+          "playground/lib/screens/music/music_demo.dart"
+        ]
+      },
+      {
+        "name": "music_note",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/liquid_glass/floating_tab_bar_demo.dart",
+          "playground/lib/screens/material3/m3_hide_on_scroll_demo.dart",
+          "tutorials/material_you/lib/screens/material3/m3_hide_on_scroll_demo.dart"
+        ]
+      },
+      {
+        "name": "music_note_2",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/home/showcase_tab.dart",
+          "playground/lib/screens/liquid_glass/zoom_morph_demo.dart"
+        ]
+      },
+      {
+        "name": "music_note_list",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/carousel_demo.dart"
+        ]
+      },
+      {
+        "name": "paintbrush",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/home/home_shell.dart"
+        ]
+      },
+      {
+        "name": "paintbrush_fill",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/home/graphics_tab.dart",
+          "playground/lib/screens/home/showcase_tab.dart"
+        ]
+      },
+      {
+        "name": "paperclip",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/media/gpt_attachment_panel.dart"
+        ]
+      },
+      {
+        "name": "pause_fill",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/carousel_demo.dart",
+          "playground/lib/screens/media/custom_controls_demo.dart",
+          "playground/lib/screens/music/music_demo.dart",
+          "playground/lib/screens/music/now_playing_sheet.dart",
+          "plugins/dartnative_video_player/example/lib/screens/controls/video_full_screen_controls.dart",
+          "plugins/dartnative_video_player/example/lib/screens/controls/video_portrait_controls.dart",
+          "plugins/dartnative_video_player/example/lib/screens/custom_controls_demo.dart",
+          "tutorials/video_player/lib/screens/media/custom_controls_demo.dart"
+        ]
+      },
+      {
+        "name": "pencil",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/system_components_demo.dart"
+        ]
+      },
+      {
+        "name": "person",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/material3/m3_badges_demo.dart",
+          "playground/lib/screens/system_components_demo.dart",
+          "tutorials/material_you/lib/screens/material3/m3_badges_demo.dart"
+        ]
+      },
+      {
+        "name": "person_crop_circle",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/home/system_tab.dart"
+        ]
+      },
+      {
+        "name": "person_crop_circle_fill",
+        "verified": true,
+        "sourceFiles": [
+          "tutorials/hero_stories/lib/main.dart"
+        ]
+      },
+      {
+        "name": "person_fill",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/system_components_demo.dart"
+        ]
+      },
+      {
+        "name": "photo",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/media/gpt_attachment_panel.dart"
+        ]
+      },
+      {
+        "name": "photo_fill",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/home/graphics_tab.dart",
+          "playground/lib/screens/home/media_tab.dart"
+        ]
+      },
+      {
+        "name": "photo_fill_on_rectangle_fill",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/liquid_glass/zoom_morph_demo.dart"
+        ]
+      },
+      {
+        "name": "photo_on_rectangle",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/home/showcase_tab.dart"
+        ]
+      },
+      {
+        "name": "play_fill",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/carousel_demo.dart",
+          "playground/lib/screens/media/custom_controls_demo.dart",
+          "playground/lib/screens/music/album_screen.dart",
+          "playground/lib/screens/music/music_demo.dart",
+          "playground/lib/screens/music/now_playing_sheet.dart",
+          "playground/lib/screens/system_components_demo.dart",
+          "plugins/dartnative_video_player/example/lib/screens/controls/video_full_screen_controls.dart",
+          "plugins/dartnative_video_player/example/lib/screens/controls/video_portrait_controls.dart",
+          "plugins/dartnative_video_player/example/lib/screens/custom_controls_demo.dart",
+          "tutorials/video_player/lib/screens/media/custom_controls_demo.dart"
+        ]
+      },
+      {
+        "name": "play_rectangle",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/home/home_shell.dart"
+        ]
+      },
+      {
+        "name": "play_rectangle_fill",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/home/media_tab.dart",
+          "tutorials/video_player/lib/main.dart"
+        ]
+      },
+      {
+        "name": "plus",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/liquid_glass/bar_actions_demo.dart",
+          "playground/lib/screens/liquid_glass/glass_merge_demo.dart",
+          "playground/lib/screens/media/chatgpt_picker_demo.dart",
+          "playground/lib/screens/media/gpt_attachment_panel.dart",
+          "tutorials/liquid_glass/lib/screens/liquid_glass/glass_merge_demo.dart"
+        ]
+      },
+      {
+        "name": "quote_bubble",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/music/now_playing_sheet.dart"
+        ]
+      },
+      {
+        "name": "rectangle_dock",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/liquid_glass/liquid_glass_menu.dart"
+        ]
+      },
+      {
+        "name": "rectangle_stack_fill",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/home/graphics_tab.dart",
+          "playground/lib/screens/home/showcase_tab.dart"
+        ]
+      },
+      {
+        "name": "rotate_right_fill",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/home/system_tab.dart"
+        ]
+      },
+      {
+        "name": "scribble",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/home/graphics_tab.dart"
+        ]
+      },
+      {
+        "name": "search",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/carousel_demo.dart",
+          "playground/lib/screens/liquid_glass/liquid_glass_menu.dart",
+          "playground/lib/screens/system_components_demo.dart",
+          "tutorials/search_app_bar/lib/main.dart"
+        ]
+      },
+      {
+        "name": "shuffle",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/music/album_screen.dart"
+        ]
+      },
+      {
+        "name": "sidebar_left",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/home/showcase_tab.dart"
+        ]
+      },
+      {
+        "name": "slider_horizontal_3",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/home/media_tab.dart",
+          "playground/lib/screens/home/widgets_tab.dart",
+          "tutorials/video_player/lib/main.dart"
+        ]
+      },
+      {
+        "name": "sparkles",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/home/graphics_tab.dart",
+          "playground/lib/screens/home/system_tab.dart"
+        ]
+      },
+      {
+        "name": "speaker_2_fill",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/home/media_tab.dart"
+        ]
+      },
+      {
+        "name": "speaker_3_fill",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/music/now_playing_sheet.dart"
+        ]
+      },
+      {
+        "name": "speaker_fill",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/music/now_playing_sheet.dart"
+        ]
+      },
+      {
+        "name": "square_arrow_up",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/liquid_glass/bar_actions_demo.dart",
+          "plugins/dartnative_webview/example/lib/webview_demo.dart"
+        ]
+      },
+      {
+        "name": "square_grid_2x2",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/home/graphics_tab.dart",
+          "playground/lib/screens/home/home_shell.dart",
+          "playground/lib/screens/home/widgets_tab.dart"
+        ]
+      },
+      {
+        "name": "square_grid_2x2_fill",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/music/music_demo.dart"
+        ]
+      },
+      {
+        "name": "square_on_square",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/home/widgets_tab.dart"
+        ]
+      },
+      {
+        "name": "square_stack_3d_up",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/liquid_glass/liquid_glass_menu.dart"
+        ]
+      },
+      {
+        "name": "square_stack_3d_up_fill",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/home/graphics_tab.dart",
+          "playground/lib/screens/home/showcase_tab.dart"
+        ]
+      },
+      {
+        "name": "star_fill",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/home/home_shell.dart"
+        ]
+      },
+      {
+        "name": "sun_max",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/home/home_shell.dart",
+          "playground/lib/screens/state_store_demo.dart",
+          "tutorials/state/lib/screens/state_store_demo.dart"
+        ]
+      },
+      {
+        "name": "table",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/home/system_tab.dart"
+        ]
+      },
+      {
+        "name": "textformat",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/home/widgets_tab.dart"
+        ]
+      },
+      {
+        "name": "textformat_alt",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/home/showcase_tab.dart"
+        ]
+      },
+      {
+        "name": "textformat_size",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/liquid_glass/liquid_glass_menu.dart",
+          "tutorials/liquid_glass/lib/main.dart"
+        ]
+      },
+      {
+        "name": "trash",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/liquid_glass/bar_actions_demo.dart",
+          "playground/lib/screens/system_components_demo.dart"
+        ]
+      },
+      {
+        "name": "tray_full_fill",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/home/system_tab.dart",
+          "playground/lib/screens/home/widgets_tab.dart",
+          "tutorials/state/lib/main.dart"
+        ]
+      },
+      {
+        "name": "wand_stars_inverse",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/home/graphics_tab.dart"
+        ]
+      },
+      {
+        "name": "waveform",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/media/chatgpt_picker_demo.dart"
+        ]
+      },
+      {
+        "name": "wifi",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/home/media_tab.dart"
+        ]
+      },
+      {
+        "name": "xmark",
+        "verified": true,
+        "sourceFiles": [
+          "playground/lib/screens/hero_demo.dart",
+          "playground/lib/screens/media/chatgpt_picker_demo.dart",
+          "playground/lib/screens/state_store_demo.dart",
+          "playground/lib/screens/system_components_demo.dart",
+          "tutorials/hero_stories/lib/screens/hero_demo.dart",
+          "tutorials/state/lib/screens/state_store_demo.dart"
+        ]
+      }
+    ]
+  }
+}

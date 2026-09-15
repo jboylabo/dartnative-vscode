@@ -1,0 +1,63 @@
+{
+  "name": "dartnative-vscode",
+  "displayName": "DartNative IntelliSense (PoC)",
+  "description": "Snippets and IntelliSense (widget/icon completion, hover) for DartNative, a native iOS/Android Dart framework.",
+  "version": "0.0.1",
+  "publisher": "dartnative-poc",
+  "author": "Junichi Hashimoto",
+  "license": "MIT",
+  "private": true,
+  "icon": "assets/vscode_extension_icon.png",
+  "engines": {
+    "vscode": "^1.85.0",
+    "node": ">=20"
+  },
+  "categories": [
+    "Snippets",
+    "Programming Languages"
+  ],
+  "keywords": [
+    "dartnative",
+    "dart",
+    "flutter",
+    "snippets",
+    "completion"
+  ],
+  "main": "./dist/extension.cjs",
+  "activationEvents": [
+    "onLanguage:dart"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "dart",
+        "path": "./snippets/dartnative.json"
+      }
+    ]
+  },
+  "scripts": {
+    "build": "node esbuild.js",
+    "watch": "node esbuild.js --watch",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "generate:api-index": "tsx scripts/generate-api-index.ts",
+    "package": "pnpm build && pnpm exec vsce package --no-dependencies"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@types/vscode": "^1.85.0",
+    "@vscode/vsce": "^3.2.1",
+    "esbuild": "^0.24.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "^11.15.1",
+      "onFail": "download"
+    }
+  },
+  "type": "module"
+}

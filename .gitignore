@@ -1,0 +1,28 @@
+# Dependencies (pnpm). pnpm-lock.yaml / pnpm-workspace.yaml ARE tracked on purpose,
+# so installs stay reproducible across branches — only the installed packages
+# themselves (which differ per machine/branch and shouldn't cause diffs) are ignored.
+node_modules/
+.pnpm-store/
+
+# Build output
+dist/
+out/
+*.tsbuildinfo
+
+# Packaged extension
+*.vsix
+
+# VS Code Extension Test Runner / Extension Development Host artifacts
+.vscode-test/
+
+# Test / coverage
+coverage/
+
+# Logs
+*.log
+pnpm-debug.log*
+npm-debug.log*
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
