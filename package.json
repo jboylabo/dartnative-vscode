@@ -8,6 +8,10 @@
   "license": "MIT",
   "private": true,
   "icon": "assets/vscode_extension_icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jboylabo/dartnative-vscode.git"
+  },
   "engines": {
     "vscode": "^1.85.0",
     "node": ">=20"
@@ -32,6 +36,16 @@
       {
         "language": "dart",
         "path": "./snippets/dartnative.json"
+      }
+    ],
+    "commands": [
+      {
+        "command": "dartnative.extractToWidgetClass",
+        "title": "DartNative: Extract to Widget Class"
+      },
+      {
+        "command": "dartnative.extractToMethod",
+        "title": "DartNative: Extract to Method"
       }
     ]
   },
